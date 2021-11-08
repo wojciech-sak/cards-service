@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: cards
+  profiles:
+    active: production
+  main:
+    allow-bean-definition-overriding: true
+
+# ACTUATOR INFO
+info:
+  app:
+    name: "Cards"
+    version: "0.0.1"
+    profile: ${spring.profiles.active}
+  serverInfo:
+    port: ${server.port}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+application:
+  allow-get-accounts: ${spring.allow-get-accounts}
+
+eureka:
+  client: ${eureka-client}
+
+server:
+  port: 5555

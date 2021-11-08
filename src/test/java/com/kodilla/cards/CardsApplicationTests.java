@@ -1,4 +1,4 @@
-package com.kodilla.cards.cards;
+package com.kodilla.cards;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
